@@ -33,6 +33,27 @@ console.log(name);*/
 // age=24;
 // console.log(age);  /*reassign */
 
-const pi=3.14;
-console.log(pi);
+// const pi=3.14;
+// console.log(pi);
 // pi=3.15;  /*reassign not allowed*/
+
+
+// var number=10;
+// console.log(number);  // o/p : 10
+// console.log(typeof (number)); // o/p : number
+
+
+// var name="harshi";
+// console.log(name);  // o/p : harshi
+// console.log(typeof (name)); // o/p : string
+
+// var age;
+// console.log(age);  // o/p : undefined 
+
+// var num =12349989644456778n;
+// console.log(num);  // o/p : 12349989644456778n
+// console.log(typeof (num)); // o/p : bigint
+
+// var num= BigInt(12345678901234567890);
+// console.log(num);
+// console.log(typeof (num));
