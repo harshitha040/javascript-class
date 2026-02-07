@@ -40,6 +40,7 @@ function num(){
 num();
 */
 
+/*
 function parent(){
     var a=10;
     //console.log(a-b); //arise error , we cannot access child function
@@ -51,3 +52,33 @@ function parent(){
     child()
 }
 parent();
+*/
+
+
+/* problem
+function fun(a,b,c) {
+    if (a === 13) {
+        return 0;
+    } 
+    else if (b === 13) {
+        return a;
+    } 
+    else if(a==13 || b==13 || c==13){
+        return "nothing"
+    }
+}
+console.log(fun(1,13,5)) // return a alue 1 
+*/
+    
+//closures
+function outer(){
+    var a=10;
+    function inner(){
+        console.log(a);
+    }
+    return inner();
+}
+var result=outer();
+result  //10
+
+
