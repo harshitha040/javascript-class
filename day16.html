@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <p>hello</p>
+    <div>
+        <p>good</p>
+        <button>click here</button>
+        <h1 id="one">Hi,everyone</h1>
+        <h3>johny johny </h3>
+        <h3>yes papa </h3>
+        <h3>eating sugar </h3>
+        <h3>no papa</h3>
+        <button onclick="changecolor()">click</button>
+        <p name="fast">sundra said </p>
+        <h2 name="fast">hi to sundri</h2>
+        <p name="fast">sundri replied</p>
+        <h4 name="fast">with dinga</h4>
+        <button onclick="changee()">changehere</button>
+        <p class="slow">lord krishna</p>
+        <h5 class="slow">radha</h5>
+    </div>
+    <script>
+        document.write("masala dosa")
+        var greet=document.getElementById('one')
+        greet.style.color="blue"
+        greet.style.backgroundColor="pink"
+        greet.textContent="<u><i>Bye</i></u>"
+        greet.innerHTML="<u><i>Bye</i></u>"
+        var rhyms = document.getElementsByTagName('h3')
+        function changecolor(){
+            rhyms[0].style.color ="pink"
+            rhyms[1].style.backgroundColor="blue"
+            rhyms[2].style.color="red"
+            rhyms[3].style.backgroundColor="yellow"
+
+        }
+        function changecolor(){
+            for(i=0;i<=rhyms.length;i++){
+                rhyms[i].style.color="purple"
+            }
+        }
+        var faster=document.getElementsByName('fast')
+        function changee(){
+            for(i=0;i<=faster.length;i++){
+                faster[i].style.fontSize= "40px";
+            }
+        }
+        document.getElementsByClassName('slow')[0].style.color="red"
+        document.getElementsByClassName('slow')[1].style.backgroundColor="yellow"
+    </script>
+</body>
+</html>
