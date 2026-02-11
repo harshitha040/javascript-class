@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="para">hello</p>
+    <!-- <button onclick="fun()">click here</button> --> 
+    <p class="para">everyone</p>
+    <p class="para">how are u</p>
+    <button onclick="fun()">click here</button> 
+    <script>
+        //function fun(){
+            //var one=document.querySelector(".para")
+        //one.style.color="blue"
+        //}
+        function fun(){
+            var a=document.querySelectorAll(".para")
+           a.forEach((elements)=>{
+                elements.style.color="blue"
+
+            })
+        }
+
+    </script>
+</body>
+</html>
