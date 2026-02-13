@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <p class="sleep"> harshi is getting sleep</p>
+    </div>
+    <script>
+        var head1=document.createElement("h1")
+        head1.innerHTML="hiii, hello"
+        document.body.appendChild(head1)
+
+        var parent=document.getElementById("container")
+        var child = document.querySelector(".sleep")
+        parent.removeChild(child)
+
+    </script>
+</body>
+</html>
