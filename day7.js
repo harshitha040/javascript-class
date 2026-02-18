@@ -8,7 +8,7 @@
 fun_name(); //7 */ 
 
 
-function fun_name(a,b){;
+function fun_name(a,b){
     console.log(a+b);
 }
 fun_name(5,6); // 11

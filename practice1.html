@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hide/show</title>
+</head>
+<body>
+
+    <button id="btn" onclick="fun()">Hide</button>
+    <p id="para">This is a hidden paragraph example</p>
+    <script>
+        var btn = document.getElementById("btn");
+        var para = document.getElementById("para");
+        function fun() {
+            if (para.style.display === "none") {
+                para.style.display = "block";
+                btn.textContent = "Hide";
+            } else {
+                para.style.display = "none";
+                btn.textContent = "Show again";
+            }
+        }
+    </script>
+
+</body>
+</html>
