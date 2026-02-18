@@ -24,7 +24,7 @@ console.log(place1.concat(" "+place2)); // hyderabad vijayawada  , concat done b
 console.log(place.includes('W')); // true 
 console.log(place.includes('M')); // false
 
-console.log(place.indexOf('G')); // 4
+console.log(place.indexOf('G')); // 5
 console.log(place.indexOf('A')); // 1  , it returns first occurance index of A
 
 console.log(place.lastIndexOf('A')); //6  , it returns last occurance index of A

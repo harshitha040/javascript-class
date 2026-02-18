@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body onload="loading()">
+    <h2 id="one"> today i wednesday , lets go to party, sundri</h2>
+    <button onclick="party()">click here</button><br><br>
+    <button onmouseover="fun()">mouseover</button><br><br>
+    <button onmouseout="fun2()">mouseout</button><br><br>
+    <form>
+        <input type="text" onfocus="fun3()"><br><br>
+    </form>
+    <form onsubmit="fun4()">
+        <input type="text">
+        <button>submit</button>
+    </form>
+    <input type="text" id="tent">
+    <select id="sel">
+        <option>hyderabad</option>
+        <option>Bengulur</option>
+        <option>canada</option>
+    </select>
+    <form>
+        <input type="checkbox" class="chec">Agree to terms 
+    </form>
+    
+    <script>
+        function party(){
+            var plan=document.querySelector("#one")
+            plan.textContent=" wait until saturday, said by sundra"
+        }
+        function fun(){
+            alert("you moved mouse on button")
+        }
+        function fun2(){
+            alert("you moved out of button")
+        }
+        function fun3(){
+            var inp =document.querySelector("input")
+            inp.style.backgroundColor="yellow"
+        }
+        function fun4(){
+           alert("form submitted") 
+
+        }
+        function loading(){
+            alert("page loaded successfully")
+        }
+        var name1=document.querySelector("#tent")
+        name1.onchange=function(){
+            console.log("the added content :" + name1.value)
+        }
+        var sele=document.querySelector("#sel")
+        sele.onchange=function(){
+            console.log("the selected city :"+ sele.value)
+        }
+        var checking=document.querySelector(".chec")
+        checking.onchange = function () {
+            if(checking.checked){
+                console.log("checked")
+            }
+            else{
+                console.log("unchecked")
+            }
+        }
+    </script>
+</body>
+</html>
