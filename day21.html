@@ -27,7 +27,9 @@
             empid:12,
             empname :"harshi",
             empSalary :12000,
-            empDetails: function(bonus){
+            empDetails: function(bonus, gift){
+                //console.log("the bonus added :" ,this.empSalary + bonus)
+                console.log("the bonus added :" ,this.empSalary + bonus ,"and gift:",gift)
                 return `the employee id : ${this.empid} | employee name : ${this.empname} | employee salary : ${this.empSalary}`
             }
         }
@@ -36,8 +38,29 @@
             empname :"harshitha",
             empSalary :40000,
         }
-        console.log(emp1.empDetails.call(emp2))
-        document.getElementById('one').innerHTML = emp1.empDetails()
+        const emp3={
+            empid:14,
+            empname :"varun",
+            empSalary :30000,
+        }
+        /////// call //////
+        /*
+        console.log(emp1.empDetails.call(emp2,5000, "cooker")) // 40000 to 45000
+        console.log(emp1.empDetails(1000,"chicken")) // 12000 to 13000
+        console.log(emp1.empDetails.call(emp3 , 2000,"maza")) //30000 to 32000 */
+
+        ///// apply /////
+        /*
+        console.log(emp1.empDetails.apply(emp2,[5000, "cooker"])) // 40000 to 45000
+        console.log(emp1.empDetails(1000,"chicken")) // 12000 to 13000
+        console.log(emp1.empDetails.apply(emp3 , [2000,"maza"])) //30000 to 32000 */
+
+        ////// bind /////
+         var res = emp1.empDetails.bind(emp3 , 2000,"maza")
+         console.log(res())
+
+
+        //document.getElementById('one').innerHTML = emp1.empDetails()
     </script>
 </body>
 </html>
