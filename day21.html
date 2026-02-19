@@ -56,9 +56,9 @@
         console.log(emp1.empDetails.apply(emp3 , [2000,"maza"])) //30000 to 32000 */
 
         ////// bind /////
-         var res = emp1.empDetails.bind(emp3 , 2000,"maza")
-         console.log(res())
-
+        var res = emp1.empDetails.bind(emp3 , 2000,"maza")
+         //console.log(res())
+        console.log(setTimeout(res, 2000)) 
 
         //document.getElementById('one').innerHTML = emp1.empDetails()
     </script>
