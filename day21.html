@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this</title>
+</head>
+<body>
+    <p id="one"></p>
+    <script>
+        /*const person={
+            firstname:"harshitha",
+            lastname : "Tenali",
+            fun_name : function(){
+                console.log(`the first name i :${this.firstname} , and last name is :${this.lastname}`)
+            }
+        }
+        const peron1={
+            firstname:"varun",
+            lastname :"wastu"
+        }
+        person.fun_name();
+        person.fun_name(person1); */
+
+        // Employee details
+        const emp1={
+            empid:12,
+            empname :"harshi",
+            empSalary :12000,
+            empDetails: function(bonus){
+                return `the employee id : ${this.empid} | employee name : ${this.empname} | employee salary : ${this.empSalary}`
+            }
+        }
+        const emp2={
+            empid:13,
+            empname :"harshitha",
+            empSalary :40000,
+        }
+        console.log(emp1.empDetails.call(emp2))
+        document.getElementById('one').innerHTML = emp1.empDetails()
+    </script>
+</body>
+</html>
