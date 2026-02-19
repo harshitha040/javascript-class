@@ -1,3 +1,5 @@
+//variable hoisting 
+
 /*console.log(food)
 var food="biryani"
 console.log(food) 
@@ -18,7 +20,7 @@ let name ="harshi"
 
 it will display as below also
 let name; -- temporal dead zone
-conso;e.log(name)
+console.log(name)
 name = "harshi"; 
 */
 
