@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //setTimeout(()=>console.log("hi hello"),2000)
+        //setInterval(()=>console.log("how r u"),2000)
+
+        //var clr= setTimeout(()=>console.log("my name is harshitha"),2000)
+        //clearTimeout(clr)
+
+        var count=1;
+        var one =setInterval(()=>{
+            console.log("count :" ,count)
+            count++
+            if(count>5){
+                clearInterval(one)
+            }
+        },2000)
+
+
+    </script>
+</body>
+</html>
