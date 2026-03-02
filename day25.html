@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<body onload="buttoncolor()">
+    <form name="myform" onsubmit=" return validation()">
+        Name :<input type="text" name="username"><br><br>
+        password :<input type="password" name="password"><br><br>
+        <input type="Submit" value="login" name="btn">
+    </form>
+
+    <script>
+        function validation(){
+            var a= document.myform.username.value
+            var b= document.myform.password.value
+            if(a==null || a==""){
+                alert("user name is mandatory")
+                return false;
+            }
+            else if(b==null || b==""){
+                alert("password is not filled")
+                return false; // it will stop the data to be submitted to backend
+            }
+            else{
+                alert("form submitted succesfully")
+                return true;
+            }
+        }
+        function buttoncolor(){
+            var c= document.getElementsByName('btn')
+            c[0].style.color="blue"
+
+        }
+    </script>
+</body>
+</html>
